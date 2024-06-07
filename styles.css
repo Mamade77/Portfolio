@@ -1,0 +1,34 @@
+
+body {justify-content: center;}
+
+
+div {
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+h1 {
+text-align: center;
+
+}
+
+
+h2 {
+    text-align: center;
+    
+    }
+div .button {
+    align-self: auto;
+    max-width: 50%;
+    height: 10%;
+    margin: 20px;
+    background-color: dimgray;
+
+
+
+
+}

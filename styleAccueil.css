@@ -1,0 +1,376 @@
+body {
+    margin: 0;
+    padding: 0;
+overflow-x: hidden;
+    background-color: #000000;
+    color: rgb(251, 251, 251);
+}
+
+
+
+nav {
+  padding: 2px;
+  position: sticky;
+  top: 0; /* Stick to the top of the viewport */
+  z-index: 1000; /* Ensure the navigation is above other content */
+  border: 2px solid white;
+  background-color: black; /* Added background color for better visibility */
+}
+  
+  nav ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  
+  nav ul li a {
+    
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    transition: color 0.3s ease-in-out;
+    border: 2px solid transparent; /* Contour initial */
+    padding: 10px 20px; /* Espace autour du texte */
+    flex: 1; /* Fait en sorte que chaque lien prenne autant d'espace que possible */
+    text-align: center; /* Centre le texte horizontalement */
+  }
+  
+  nav ul li a:hover {
+    text-shadow: 1px 1px 5px #43234e, -1px -1px 5px #3ad461, 1px -1px 5px #137de7, -1px 1px 5px #c21515;
+    border-color: #d0d0d0; /* Changement de couleur du contour au survol */
+  
+   transition: color 0.3s ease-in-out;
+}
+
+  .shadowmulti {
+    text-shadow: 1px 1px 3px #43234e,
+     -1px -1px 3px #3ad461, 1px -1px 3px #137de7,
+      -1px 1px 3px #c21515;
+    }
+
+  h1 {
+    text-align: center;
+    font-size: 48px;
+  }
+  h2,h3 {
+    text-align: center;
+  }
+
+  .flex {
+    display: flex;
+  }
+  @media only screen and (max-width: 800px){
+    .flex {
+      flex-direction: row;
+    }
+  }
+/* Styling for the aside element */
+aside {
+  display:flex;
+  flex-direction: column;
+  position: fixed;
+  align-items: center;
+  top: 5vh;
+  left: 0;
+  height: 100%; /* Make the aside take full height of the viewport */
+  width: 23%;
+ 
+  padding: 1rem;
+ 
+}
+
+aside img {
+  box-shadow: 1px 1px 10px rgba(242, 242, 242, 0.996);
+  border-radius: 5px;
+  width: 80%;
+}
+/* Styling for the ul list */
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside ul li {
+  display: block; /* Make the links block-level for better spacing */
+  text-align: center;
+  color: #d1e2eb;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0.5rem 0.5rem; /* Increased padding for better spacing */
+  justify-content: space-around; /* Added margin between list items */
+  /* Updated border color */
+  border-radius: 5px; /* Added border radius for rounded corners */
+  transition: background-color 0.3s ease-in-out; /* Added transition for background color change */
+}
+
+/* Styling for the links inside the ul list */
+aside ul li a {
+  box-shadow: 1px 1px 10px rgba(242, 242, 242, 0.996);
+  display: block; /* Make the links block-level for better spacing */
+  text-decoration: none;
+  color: #d1e2eb;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0.5rem 1rem; /* Increased padding for better spacing */
+  margin-bottom: 0.5rem; /* Added margin between list items */
+  border: 2px solid #d1e2eb; /* Updated border color */
+  border-radius: 5px; /* Added border radius for rounded corners */
+  transition: background-color 0.3s ease-in-out; /* Added transition for background color change */
+}
+
+/* Hover effect for links */
+aside ul li a:hover {
+  background-color: #3a8abf; /* Darker background color on hover */
+}
+section {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 2px solid #d1e2eb; 
+  border-radius: 5px;
+  margin-left: 25%; 
+  padding: 1rem;
+  overflow-y: auto;
+
+}
+
+  article {
+      margin-bottom: 10px;
+  border: 2px solid #d1e2eb;
+  border-radius: 15px;
+  }
+
+p b {
+  
+  text-align: center;
+}
+
+div.projet {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  text-align: left;
+  font-size: 28px;
+color: white}
+
+
+div.listepro {
+  display: flex;
+  flex-direction: column;
+   padding-left: 1rem;
+   padding-bottom: 1rem;
+  border: 2px solid #d1e2eb;
+  border-radius: 5px;}
+
+  div.listepro img {
+    width: 50%;
+  }
+  .small-line {
+    height: 1px;
+    width: 80%; 
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+  }
+
+  
+
+  footer {
+    margin-left: 25%; 
+    padding: 5px 20px;
+    border-bottom: 4px solid #333;
+
+    border-image-slice: 0.5;
+    border-top: 4px solid #333;
+    
+    bottom: 0;
+    
+    font-size: 24px;
+    text-align: center;
+  }
+
+
+
+  div.contact { font-size: 24px;
+    text-align: center;
+    padding: auto;
+
+  }
+
+  div.contact a { color: white;}
+
+
+div.contactlogo {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.prog img:hover {
+  transform: scale(1.1); /* zoom au survol */
+  filter: brightness(3.0); /* augmentation de la luminosité au survol */
+}
+
+/* Pour les petits écrans */
+@media only screen and (max-width: 800px) {
+  /* Cache la liste de navigation principale */
+  nav ul {
+    display: none;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+
+  section {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 2px solid #d1e2eb; 
+    border-radius: 5px;
+    margin-left: 0%; 
+    padding: 1rem;
+    overflow-y: auto;
+  
+  }
+  
+
+
+/* Pour les petits écrans */
+@media only screen and (max-width: 800px) {
+  /* Affiche la liste de navigation en colonne */
+  nav ul {
+    display: none;
+    flex-direction: column; /* Affichage en colonne */
+  }
+
+ /* Menu burger */
+.menu-toggle {
+  cursor: pointer;
+  font-size: 4em; /* Augmente la taille de l'icône */
+ 
+  line-height: 1; /* Centre le contenu verticalement */
+  margin: 0 auto; /* Centre l'élément */
+  width: 100%; /* Assure que le menu burger prend la largeur maximale */
+}
+
+
+  /* Affiche la liste de navigation lorsqu'elle est active */
+  nav ul.active {
+    display: flex;
+  }
+
+
+  /* Style du bouton de remontée */
+#back-to-top {
+  box-shadow: 1px 1px 10px rgba(242, 242, 242, 0.996);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 15;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none; /* Initialement masqué */
+}
+
+#back-to-top span {
+  display: inline-block;
+ 
+}
+
+}
+ 
+
+  /* Affiche l'aside sous la navigation */
+  aside {
+    position: relative; /* Change la position de l'aside */
+    top: auto; /* Supprime la position fixe */
+    width: 100%; /* Prend toute la largeur */
+    margin-top: 20px; /* Ajoute un espace entre la navigation et l'aside */
+    padding: 0; /* Supprime le rembourrage */
+  }
+
+  
+aside img {
+  box-shadow: 1px 1px 10px rgba(242, 242, 242, 0.996);
+  border-radius: 5px;
+  height: 50vh;
+  width: auto;
+}
+}
+
+/* Pour les grands écrans */
+@media only screen and (min-width: 801px) {
+  /* Cache le menu burger */
+  .menu-toggle {
+    display: none;
+  }
+}
+@media only screen and (max-width: 800px) {
+  /* Réduire la taille de la police pour tous les éléments */
+
+
+  h1 {
+    font-size: 20px; /* Ajustez la taille de la police des liens de navigation selon vos besoins */
+  }
+
+  h3,p {
+    font-size: 8px; /* Ajustez la taille de la police des éléments de la liste de l'aside selon vos besoins */
+  }
+  .prog {
+    flex-wrap: wrap;
+ 
+  }
+.prog img{
+  width: 15vw;
+}
+  /* Ajoutez d'autres règles CSS pour d'autres éléments si nécessaire */
+}
+
+.prog {
+  display: flex;
+  justify-content: space-evenly;
+ 
+  padding: 2vw;
+}
+
+.carousel-inner{
+  width: 50vw;
+  max-height: 50vh;
+  justify-content: center;
+}
+.manhua{
+  block-size: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  width: 70%;
+}
+
+
+.listepropo {
+  display: flex;
+  flex-direction: column;
+   padding-left: 1rem;
+   padding-bottom: 1rem;
+  border: 2px solid #d1e2eb;
+  border-radius: 5px;}
+
+  .listepropo  img {
+height: 20%;
+width: auto;
+
+  }
